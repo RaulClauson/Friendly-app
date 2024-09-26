@@ -1,0 +1,106 @@
+#Friendly_Exemplos{
+    width: 100%;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    fill: #000000;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+#Friendly_Exemplos div{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+#Friendly_Exemplos div button{
+    width: 280px;
+    min-height: 140px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    text-align: left;
+     
+    color: #000000;
+    background: #fff;
+    border-radius: 14px;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin: 0;
+    padding: 30px;
+    padding-bottom: 55px;
+    box-sizing: border-box;
+    pointer-events: all;
+    cursor: pointer;
+    position: relative;
+}
+#Friendly_Exemplos div button:hover{
+    background: #00000010;
+}
+#Friendly_Exemplos div button h3{
+    font-family: Sequel Sans;
+    font-size: clamp(1rem, 0.9554rem + 0.2232vw, 1.3125rem);
+    opacity: 0.9;
+    margin: 0;
+}
+#Friendly_Exemplos div button p{
+    width: 90%;
+    font-family: Sequel Sans;
+    font-size: clamp(0.875rem, 0.8571rem + 0.0893vw, 1rem);
+    opacity: 0.5;
+    margin: 0;
+}
+#Friendly_Exemplos div button svg{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: clamp(0.75rem, 0.7321rem + 0.0893vw, 0.875rem);
+    font-weight: bold;
+}
+@media (max-width: 888px) {
+    #Friendly_Exemplos{
+        gap: 2.2vh;
+    }
+    #Friendly_Exemplos div button{
+        padding-bottom: 35px;
+        padding: 24px;
+        min-height: 125px;
+    }
+    #Friendly_Exemplos div button p{
+        width: 80%;
+    }
+    #Friendly_Exemplos div{
+        gap: 12px;
+    }
+}
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+.dark-mode #Friendly_Exemplos div button{
+    background: #00000010;
+}
+.dark-mode #Friendly_Exemplos div button:hover{
+    background: #00000015;
+}
+.dark-mode #Friendly_Exemplos div button svg{
+    color: #000000;
+    background-color: #00000015;
+}
