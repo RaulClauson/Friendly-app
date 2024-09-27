@@ -31,16 +31,7 @@ header{
     opacity: 0;
     animation: header 0.8s 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
 }
-@keyframes header {
-  0%{
-    opacity: 0;
-    transform: translateX(clamp(-90px, -120px, -13%));
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(clamp(0));
-  }
-}
+
 header nav{
     display: flex;
     align-items: center;
@@ -86,6 +77,8 @@ header nav div{
     z-index: 5;
     margin-left: 4vw;
     top: 2.5vw;
+    opacity: 0;
+    animation: header 0.8s 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
 }
 .btn_menu:hover{
     color: rgba(0, 0, 0, 1);
@@ -94,7 +87,16 @@ header nav div{
 .btn_menu_closed{
     left: 85px !important;
 }
-
+@keyframes header {
+    0%{
+      opacity: 0;
+      transform: translateX(clamp(-90px, -120px, -13%));
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(clamp(0));
+    }
+  }
 /* ================================================================ */
 /* LINKS MENU */
 /* ================================================================ */
