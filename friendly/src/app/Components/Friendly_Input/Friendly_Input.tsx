@@ -39,7 +39,7 @@ const Friendly_Input = () => {
             <BiSolidSend size={20} style={{ transform: 'rotate(-45deg)' }} aria-hidden="true" />
           </button>
         </label>
-        <p>A AI do Vapt-Vupt pode apresentar informações imprecisas. Por isso, cheque as respostas.</p>
+        <p>A AI do Friendly pode apresentar informações imprecisas. Por isso, cheque as respostas.</p>
       </div>
     </>
   );

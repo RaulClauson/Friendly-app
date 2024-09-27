@@ -36,12 +36,14 @@ const Menu = () => {
     const header = document.getElementById('header');
     const header2 = document.getElementById('header_open');
     const sombra_menu = document.getElementById('sombra_menu');
+    const btn_menu = document.getElementById('btn_menu');
 
-    if (header && header2 && sombra_menu) {
+    if (header && header2 && sombra_menu && btn_menu) {
       if (mediaQuery.matches) {
         header.classList.add('header_closed');
         header2.classList.add('header_closed');
         sombra_menu.classList.remove('sombra_menu_open');
+        btn_menu.classList.add('btn_menu_closed');
       }
 
       mediaQuery.addEventListener('change', () => {
@@ -49,10 +51,12 @@ const Menu = () => {
           header.classList.add('header_closed');
           header2.classList.add('header_closed');
           sombra_menu.classList.remove('sombra_menu_open');
+          btn_menu.classList.add('btn_menu_closed');
         } else {
           header.classList.remove('header_closed');
           header2.classList.remove('header_closed');
           sombra_menu.classList.add('sombra_menu_open');
+          btn_menu.classList.remove('btn_menu_closed');
         }
       });
     } else {
