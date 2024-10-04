@@ -1,0 +1,30 @@
+#Friendly_Olhos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100dvh;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Friendly_Olhos div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Friendly_Olhos *{
+    transition: 1s;
+    animation: Friendly_Olhos 1s ease;
+    overflow: hidden !important;
+    pointer-events: none;
+}
+
+@media (max-width: 888px) {
+    #Friendly_Olhos{
+        top: 48%;
+    }
+}
